@@ -105,15 +105,7 @@ def echo(sock,boardid):
         else:
             boards.pop(boardid)
 
-
-
-
     
-
-
-
-        print(type(data),data)
-
 
 # app.run(host="0.0.0.0:"+os.getenv("PORT"))
 app.run(host="0.0.0.0",port=os.getenv("PORT", default=5000),debug=True)
