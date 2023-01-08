@@ -1,4 +1,4 @@
 Flask==2.2.2
 flask-sock==0.6.0
 shortuuid==1.0.11
-
+Flask-Cors==3.0.10
