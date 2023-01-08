@@ -41,7 +41,6 @@ def index():
 @app.route('/createboard',methods=['POST'])
 def createRoom():
     payload = request.get_json()
-    print(payload)
     uuid = shortuuid.ShortUUID().random(length=6)
     creator = attendee(payload['pName'])
     newboard  = board(payload['bName'],creator)
